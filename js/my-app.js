@@ -78,7 +78,7 @@ function onDeviceReady() {
     }
 
     request.onsuccess = function (event) {
-        console.log("Success: Database Opened.");
+        alert("Success: Database Opened.");
         db = event.target.result;
 
         getSubjects();
@@ -93,7 +93,7 @@ function onDeviceReady() {
     }
 
     request.onerror = function (event) {
-        console.log("Error: Error opening database.");
+        alert("Error: Error opening database.");
     }
 }
 
